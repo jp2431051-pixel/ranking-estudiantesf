@@ -1,0 +1,172 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://www.noticiags.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-13-at-3.25.09-PM-2.jpeg');
+ background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebee;
+  color: #1c1e21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card {
+  background: rgba(255, 255, 255, 0.85); 
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px); 
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.title-card h1 {
+  text-align: center;
+  color: #1877f2;
+  margin: 0;
+}
+
+input, select {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccd0d5;
+  width: 200px;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1877f2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #145dbf;
+}
+
+.stars {
+  cursor: pointer;
+  font-size: 24px;
+  color: #ccc;
+}
+.stars .filled {
+  color: #f7b731;
+}
+
+.ranking-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ranking-column {
+  flex: 1;
+  min-width: 300px;
+}
+.rating-hint {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 8px;
+  font-style: italic;
+}
+.vote-count {
+  font-size: 14px;
+  color: #444;
+  margin-top: 5px;
+}
+.container-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+.title-card h1 {
+  text-align: center;
+  color: #1877f2;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2.8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+#filters h2 {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+#filters input,
+#filters select {
+  flex: 1 1 200px; 
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccd0d5;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: border-color 0.3s;
+}
+
+#filters input:focus,
+#filters select:focus {
+  border-color: #1877f2;
+  outline: none;
+}
+
+.ranking-columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .container-card {
+    padding: 20px 15px;
+    margin: 15px;
+  }
+
+  #filters input,
+  #filters select,
+  #filters button {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .ranking-columns {
+    flex-direction: column;
+  }
+
+  .ranking-column {
+    min-width: 100%;
+  }
+}
